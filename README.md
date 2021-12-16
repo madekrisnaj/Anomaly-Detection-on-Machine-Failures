@@ -44,3 +44,32 @@ There is nothing notable about the normal operation data.
 <a href="https://ibb.co/Gdk7d9P"><img src="https://i.ibb.co/7SVvSQy/4.png" alt="4" border="0"></a>
 
 We can see the increase in the frequency amplitude and energy in the system leading up to the bearing failures.
+
+## Model Building
+Long Short-Term Memory (LSTM) are a type of recurrent neural network capable of learning order dependence in sequence prediction problems. (Browniee, 2017). This is a behavior required in complex problem domains like machine translation, speech recognition, and more. LSTMs are a complex area of deep learning. It can be hard to get your hands around what LSTMs are, and how terms like bidirectional and sequence-to-sequence relate to the field.
+
+For our model we will use an autoencoder neural network architecture. This architecture was chosen to handle model weaknesses due to the selection of training data from normal conditions.
+
+<a href="https://ibb.co/wrG9JhB"><img src="https://i.ibb.co/R4rxhTY/6.png" alt="6" border="0"></a>
+
+For 100 epochs and batxh size is 10, we fit the model to training data. We can plot the training losses to evaluate our model's performance.
+
+<a href="https://ibb.co/Bfcx2sQ"><img src="https://i.ibb.co/wdBXh6P/7.png" alt="7" border="0"></a>
+
+#### **Loss Distribution**
+By plotting the distribution of the calculated loss in the training set, we can determine a suitable threshold value for identifying an anomaly. In doing this, one can make sure that this threshold is set above the noise level so that false positives are not triggered.
+
+<a href="https://ibb.co/9npdN8c"><img src="https://i.ibb.co/wyd2R0B/8.png" alt="8" border="0"></a>
+
+Based on the histogram, we get treshold value of around 0.2625
+
+#### **Result Failure Time Plot**
+We visualize the result over time. The red line indicates our treshold value of 0.2625.
+
+<a href="https://ibb.co/NZzYXhw"><img src="https://i.ibb.co/6g5s2h6/9.png" alt="9" border="0"></a>
+
+## Conclusion
+By analyzing past trends of healthy, the model learns the expected trend with acceptable variance (hyperparameter). From the above vizualization, we see that the model is able to detect the anomaly approximately 3 days ahead of the actual bearing failure.
+
+## References
+https://machinelearningmastery.com/gentle-introduction-long-short-term-memory-networks-experts/ https://www.sciencedirect.com/science/article/pii/B9780128147610000137
