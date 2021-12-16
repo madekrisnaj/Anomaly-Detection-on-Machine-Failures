@@ -5,4 +5,10 @@ Condition Based Maintenance (CBM) uses sensor to to collect real-time measuremen
 
 Key take-aways from use case:
 * How to build an anomaly detection model using [**Long Short-Term Memory (LSTM)**](https://www.tensorflow.org/api_docs/python/tf/keras/layers/LSTM.html) Autoencoder Model.
-* List of required software offered as part of [**SAS Analytics for IoT**](https://www.sas.com/en_us/software/analytics-iot.html) 
+
+## Data Description
+We will use vibration sensor readings from NASA Acoustics and Vibration Database. sensor readings were taken on four bearings that were run to failure under constant load and running conditions. The vibration measurement signals are provided for the datasets over the lifetime of the bearings until failure. Failure occurred after 100 million cycles with a crack in the outer race.
+
+You can download the sensor data [here] ()
+
+List of required software offered as part of [**SAS Analytics for IoT**](https://www.sas.com/en_us/software/analytics-iot.html) 
