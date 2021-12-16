@@ -22,19 +22,19 @@ Based on the overall data plot. We can see the period of normal data and anomalo
 
 <a href="https://ibb.co/x1tTZ8V"><img src="https://i.ibb.co/48nrkgB/1.png" alt="1" border="0"></a>
 
-##### **Training Data**
+#### **Training Data**
 We plot the training data which represent normal operating conditions.
 
 <a href="https://ibb.co/68dGQFh"><img src="https://i.ibb.co/VxKb6Ty/2.png" alt="2" border="0"></a>
 
-##### **Testing Data**
+#### **Testing Data**
 Next, we can see the test dataset sensor readings over time
 
 <a href="https://ibb.co/wRpLJZR"><img src="https://i.ibb.co/t4YhZw4/3.png" alt="3" border="0"></a>
 
 We can see that near the failure point, the bearing vibration become oscillate. 
 
-##### **Frequency Perspective**
+#### **Frequency Perspective**
 To view the vibrations in a frequency perspective, the data is transformed using the [**Fourier transform**](https://www.dataq.com/data-acquisition/general-education-tutorials/fft-fast-fourier-transform-waveform-analysis.html#:~:text=Simply%20stated%2C%20the%20Fourier%20transform,magnitude%2C%20frequency%2C%20and%20phase).
 
 <a href="https://ibb.co/tQRcF56"><img src="https://i.ibb.co/VJ6D58G/5.png" alt="5" border="0"></a>
